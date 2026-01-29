@@ -1,9 +1,8 @@
 # MiniProject 1 Part 1: 
 ## Semantic Similarity with Embeddings
 
-**Student Name:** Priya Bharathi Arul  
-**Course:** LLM Fundamentals 
 **StreamLit Link** : https://llmminiproject1-demo-yjzzqsasqrmuvvcyyw5pys.streamlit.app/
+
 **GitHub Link**: https://github.com/PriyaBharathiArul/LLM_miniproject1-demo.git
 
 ---
