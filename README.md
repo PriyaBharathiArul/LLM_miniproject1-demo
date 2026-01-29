@@ -1,9 +1,10 @@
-# MiniProject 1 Part 1: Analysis Document - COMPLETE
+# MiniProject 1 Part 1: 
 ## Semantic Similarity with Embeddings
 
 **Student Name:** Priya Bharathi Arul  
-**Course:** LLM Fundamentals  
-**Date:** January 27, 2026
+**Course:** LLM Fundamentals 
+**StreamLit Link** : https://llmminiproject1-demo-yjzzqsasqrmuvvcyyw5pys.streamlit.app/
+**GitHub Link**: https://github.com/PriyaBharathiArul/LLM_miniproject1-demo.git
 
 ---
 
@@ -184,8 +185,6 @@ Based on my test results:
 #### The Dimensionality Paradox
 
 My results reveal a surprising truth: **More dimensions ≠ Better performance**
-
-Note: GloVe-100d was excluded due to loading issues; performance trends are inferred from 25d and 50d results.
 
 | Model | Dimensions | Performance | Paradox? |
 |-------|-----------|-------------|----------|
@@ -369,7 +368,7 @@ Therefore, **any application requiring real semantic understanding must use cont
 
 ---
 
-## Part C: Real-World Applications - COMPLETE ANALYSIS
+## Part C: Real-World Applications 
 
 ### Example Group 1: Kitchen vs Baby Products
 **Categories:** `Kitchen Baby Furniture Outdoor`
@@ -474,7 +473,7 @@ Both refer to baby products, so "Baby" is correct for both. However, the structu
 
 | Model | Top Category | Confidence Score | Analysis |
 |-------|--------------|------------------|----------|
-| GloVe 25d | Home | 2.3700 | ❌ Wrong |
+| GloVe 25d | Home | 2.3700 |  Wrong |
 | Sentence Transformer 384d | Furniture | 1.6405 | ✓ Correct |
 | OpenAI Small 1536d | Furniture | 1.5260 | ✓ Correct |
 | OpenAI Large 3072d | Furniture | 1.5038 | ✓ Correct |

@@ -45,8 +45,8 @@ def get_model_id_gdrive(model_type):
         embeddings_id = "1DBaVpJsitQ1qxtUvV1Kz7ThDc3az16kZ"
         word_index_id = "1rB4ksHyHZ9skes-fJHMa2Z8J1Qa7awQ9"
     elif model_type == "100d":
-        word_index_id = "1-oWV0LqG3fmrozRZ7WB1jzeTJHRUI3mq"
-        embeddings_id = "1SRHfX130_6Znz7zbdfqboKosz-PfNvNp"
+        embeddings_id = "1-oWV0LqG3fmrozRZ7WB1jzeTJHRUI3mq"
+        word_index_id = "1SRHfX130_6Znz7zbdfqboKosz-PfNvNp"
         
     return word_index_id, embeddings_id
 
@@ -570,7 +570,7 @@ if __name__ == "__main__":
     text_search = st.text_input(
         label="Input your sentence",
         key="text_search",
-        value="Roses are red, trucks are blue, and Seattle is grey right now",
+        value="Roses are red, trucks are blue",
     )
     # st.session_state.text_search = text_search
 
