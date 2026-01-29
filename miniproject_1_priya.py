@@ -300,9 +300,7 @@ def cosine_similarity(x, y):
     3. Return exponentiated cosine similarity
     (20 pts)
     """
-    ##################################
-    ### TODO: Add code here (10 pts) ###
-    ##################################
+    
  
     
     # Step 1: Compute the dot product of x and y
@@ -342,9 +340,6 @@ def averaged_glove_embeddings_gdrive(sentence, word_index_dict, embeddings, mode
     embedding_dim = int(model_type.split("d")[0])
     embedding = np.zeros(embedding_dim)
     
-    ##################################
-    ##### TODO: Add code here (20 pts) #####
-    ##################################
 
     words = sentence.lower().replace(',', '').replace('.', '').replace('!', '').replace('?', '').split()
     
@@ -423,9 +418,6 @@ def get_sorted_cosine_similarity(embeddings_metadata):
         embeddings = embeddings_metadata["embeddings"]
         model_type = embeddings_metadata["model_type"]
 
-        ##########################################
-        ## TODO: Implement GloVe similarity calculation (15 pts)
-        ##########################################
         
         
         # Step 1: Get the embedding for the input sentence using averaged GloVe embeddings
@@ -458,9 +450,7 @@ def get_sorted_cosine_similarity(embeddings_metadata):
         model_name = embeddings_metadata["model_name"]
         cache_key = "cat_embed_openai_" + model_name
         
-        ##########################################
-        ## TODO: Implement OpenAI similarity calculation (15 pts)
-        ##########################################
+
                
         # Step 1: Always refresh category embeddings to ensure they match current categories
         # This is important when user changes categories between runs
@@ -486,9 +476,6 @@ def get_sorted_cosine_similarity(embeddings_metadata):
         model_name = embeddings_metadata["model_name"]
         cache_key = "cat_embed_transformers_" + (model_name if model_name else "default")
         
-        ##########################################
-        ## TODO: Implement Sentence Transformer similarity calculation (15 pts)
-        ##########################################
         get_category_embeddings(embeddings_metadata)
         
         # Step 2: Get the embedding for the input sentence using Sentence Transformers
@@ -508,10 +495,6 @@ def get_sorted_cosine_similarity(embeddings_metadata):
             # Store the similarity with the category index
             cosine_sim[i] = similarity
         
-
-    ##########################################
-    ## TODO: Sort and return results (5 pts)
-    ##########################################
 
     
      # Step 1: Convert the dictionary to a list of tuples (category_index, similarity_score)
